@@ -1,7 +1,7 @@
 FROM fvigotti/fatubuntu
 
 # based on : https://github.com/nginxinc/docker-nginx/blob/master/Dockerfile
-ENV NGINX_UBUNTU_DIST wheezy
+ENV NGINX_UBUNTU_DIST jessie
 ENV NGINX_UBUNTU_ARCHITECTURE amd64
 
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
