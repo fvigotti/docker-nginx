@@ -25,11 +25,11 @@ RUN wget http://nginx.org/keys/nginx_signing.key && \
 #    rm -rf /var/lib/apt/lists/*
 
 # delete conf.d/default.conf && prepare base dirs structure
-RUN rm -rf /etc/nginx/*.d && \
-	mkdir -p /etc/nginx/addon.d /etc/nginx/conf.d /etc/nginx/host.d /etc/nginx/nginx.d
+#RUN rm -rf /etc/nginx/*.d && \
+#	mkdir -p /etc/nginx/addon.d /etc/nginx/conf.d /etc/nginx/host.d /etc/nginx/nginx.d
 
 # add /etc/nginx configuration, but do not overwrite existing default nginx configuration (Exception for /etc/nginx/nginx.conf )
-ADD etc /etc
+#ADD etc /etc
 
 VOLUME ["/etc/nginx"]
 
